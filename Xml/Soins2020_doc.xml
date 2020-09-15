@@ -1,0 +1,272 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Soins2020</name>
+  </assembly>
+  <members>
+    <member name="F:Soins2020.classesMetier.Dossier.nomPatient">
+
+      <summary>Attributs privés </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Dossier.getNomPatient">
+
+      <summary>Accesseur sur le nom du patient </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Dossier.getPrenomPatient">
+
+      <summary>Accesseur sur le prenom du patient </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Dossier.getDateNaissancePatient">
+
+      <summary>Accesseur sur la date de naissance du patient </summary>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.#ctor(System.String,System.String,System.DateTime)">
+
+      <summary>Constructeur de Dossier sans prestation </summary>
+
+      <param name="nomPatient"> nom du patient</param>
+
+      <param name="prenomPatient"> prenom du patient</param>
+
+      <param name="dateNaissancePatient"> date de naissance du patient</param>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.#ctor(System.String,System.String,System.DateTime,Soins2020.classesMetier.Prestation)">
+
+      <summary>Constructeur de Dossier avec une prestation </summary>
+
+      <param name="nomPatient"> nom du patient</param>
+
+      <param name="prenomPatient"> prenom du patient</param>
+
+      <param name="dateNaissancePatient"> date de naissance du patient</param>
+
+      <param name="unePrestation"> une prestation à insérer dans le dossier</param>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.#ctor(System.String,System.String,System.DateTime,System.Collections.Generic.List{Soins2020.classesMetier.Prestation})">
+
+      <summary>Constructeur de Dossier avec une liste de prestations </summary>
+
+      <param name="nomPatient"> nom du patient</param>
+
+      <param name="prenomPatient"> prenom du patient</param>
+
+      <param name="dateNaissancePatient"> date de naissance du patient</param>
+
+      <param name="lesPrestations"> une liste de prestation à insérer dans le client</param>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.ajoutePrestation(System.String,System.DateTime,Soins2020.classesMetier.Intervenant)">
+
+      <summary>Procédure permettant d'ajouter une prestation dans la liste des prestations du dossier du patient </summary>
+
+      <param name="libelle"> libelle de la prestation</param>
+
+      <param name="dateSoin"> date de soin de la prestation</param>
+
+      <param name="unIntervenant"> l'intervenant sur la prestation</param>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.getNbPrestationsExternes">
+
+      <summary>Fonction permettant de retourner le nombre de prestations effectuées par un intervenant externe </summary>
+
+      <returns> cpt </returns>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.getNbPrestations">
+
+      <summary>Fonction permettant de retourner le nombre de prestations effectuées </summary>
+
+      <returns/>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.getNbJoursSoins">
+
+      <summary>Fonction permettetant de récupérer le nombre de jours de soins déjà effectués </summary>
+
+      <returns/>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Dossier.getNbJoursSoinsV2">
+
+      <summary>Fonction permettetant de récupérer le nombre de jours de soins déjà effectués sans tri </summary>
+
+      <returns/>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Intervenant.#ctor(System.String,System.String)">
+
+      <summary>Constructeur </summary>
+
+      <param name="nom"> nom de l'intervenant</param>
+
+      <param name="prenom"> prenom de l'intervenant</param>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Intervenant.getNom">
+
+      <summary>Accesseur sur l'attriut Nom </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Intervenant.getPrenom">
+
+      <summary>Accesseur sur l'attribut prenom </summary>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Intervenant.ajoutePrestation(Soins2020.classesMetier.Prestation)">
+
+      <summary>Procédure permettant d'ajouter une prestation à la liste des prestations de l'intervenant </summary>
+
+      <param name="unePrestation">la prestation à ajouter à la liste</param>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Intervenant.ToString">
+
+      <summary>Méthode qui permet de retourner les informaions de l'interveant </summary>
+
+      <returns/>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.IntervenantExterne.#ctor(System.String,System.String,System.String,System.String,System.String)">
+
+      <summary>Constructeur IntervenantExterne </summary>
+
+      <param name="nom"> nom de l'intervenant</param>
+
+      <param name="prenom"> prenom de l'intervenant</param>
+
+      <param name="specialite"> specialite de l'intervenant</param>
+
+      <param name="adresse"> adresse de l'interveant</param>
+
+      <param name="tel"> tel de l'intervenant</param>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.IntervenantExterne.getSpecialite">
+
+      <summary>Accesseur sur spécialité </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.IntervenantExterne.getAdresse">
+
+      <summary>Accesseur sur Adresse </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.IntervenantExterne.getTel">
+
+      <summary>Accesseur sur Tel </summary>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.IntervenantExterne.ToString">
+
+      <summary>Méthode qui permet de retourner les informations d'un intervenant externe </summary>
+
+      <returns/>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Prestation.#ctor(System.String,System.DateTime,Soins2020.classesMetier.Intervenant)">
+
+      <summary>Constructeur de Prestation </summary>
+
+      <param name="libelle"> le libelle de la prestation</param>
+
+      <param name="dateSoin"> la date de soin de la prestation</param>
+
+      <param name="l_Intervenant"> l'intervenant sur la prestation</param>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Prestation.compareTo(Soins2020.classesMetier.Prestation)">
+
+      <summary>Fonction permettant de comparer les dates de deux soins et en sortir un entier </summary>
+
+      <param name="unePresta"> la prestation avec laquelle on va comparé la prestation courante</param>
+
+      <returns> l'entier correspondant </returns>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Prestation.getDateSoin">
+
+      <summary>Accesseur sur la date de soin </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Prestation.getL_Intervenant">
+
+      <summary>Accesseur sur l'intervenant </summary>
+
+    </member>
+
+
+    -<member name="P:Soins2020.classesMetier.Prestation.getLibelle">
+
+      <summary>Accesseur sur le Libelle </summary>
+
+    </member>
+
+
+    -<member name="M:Soins2020.classesMetier.Prestation.ToString">
+
+      <summary>Fonction qui retourne les informations sur la prestation </summary>
+
+      <returns/>
+
+    </member>
+
+  </members>
+
+</doc>
